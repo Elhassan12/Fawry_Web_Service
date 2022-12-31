@@ -27,6 +27,7 @@ public class Transaction {
             generator = "transaction_sequence"
     )
     private Long transactionID;
+    @Column(name = "status")
     private String status = " ";
     private String paymentway;
     private Date transactionDate;

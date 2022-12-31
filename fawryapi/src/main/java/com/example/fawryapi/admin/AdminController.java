@@ -42,11 +42,11 @@ public class AdminController {
     }
 
     @PutMapping(path = "{id}")
-    public void updateAdmin(
+    public APIResponse<Object> updateAdmin(
             @PathVariable("id") Long id,
             @RequestParam(required = false) String userName,
             @RequestParam(required = false) String password
     ){
-        adminService.updateAdmin(id,userName,password);
+        return adminService.updateAdmin(id,userName,password);
     }
 }

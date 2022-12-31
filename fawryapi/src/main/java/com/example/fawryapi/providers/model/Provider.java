@@ -1,5 +1,6 @@
 package com.example.fawryapi.providers.model;
 
+
 public abstract class Provider {
     private double fees = 0.9;
 

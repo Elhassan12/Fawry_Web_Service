@@ -33,9 +33,9 @@ public class ServiceConfig {
             discountObserver.subscribe(landline);
             discountObserver.subscribe(donation);
             //.........................
-            Discount discount = new Discount("specific",0.8);
-            discountObserver.notifyDiscount(mobileRecharge.getServiceName(),"specific",discount);
-            System.out.println(mobileRecharge.getServiceList().get(0).getDiscount());
+//            Discount discount = new Discount("specific",0.8);
+//            discountObserver.notifyDiscount(mobileRecharge.getServiceName(),"specific",discount);
+//            System.out.println(mobileRecharge.getServiceList().get(0).getDiscount());
 
         };
     }

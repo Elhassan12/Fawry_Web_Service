@@ -48,7 +48,7 @@ public class AdminService {
     }
 
     @Transactional
-    public void updateAdmin(Long id,String userName, String password) {
+    public APIResponse<Object> updateAdmin(Long id,String userName, String password) {
         Admin admin = adminRepository.findById(id)
                 .orElseThrow(()-> new IllegalStateException(
                         "customer with id "+ id + " does not exist"
@@ -67,5 +67,6 @@ public class AdminService {
             }
             admin.setUserName(userName);
         }
+        return new APIResponse<>(true,"Admin info updated successfully",admin);
     }
 }

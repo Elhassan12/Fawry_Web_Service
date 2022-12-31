@@ -53,8 +53,10 @@ public class ProviderService {
             }
         }
         Map<String,Object> map = new HashMap<>();
-        GlobalConstants.etisalatRecharge.setAmount(amount);
-        double cost = GlobalConstants.etisalatRecharge.getAmount();
+        GlobalConstants.mobileRecharge.getServiceList().get(0).setAmount(amount);
+        double cost = GlobalConstants.mobileRecharge.getServiceList().get(0).getAmount();
+        System.out.println(GlobalConstants.etisalatRecharge.getDiscount());
+        System.out.println(cost);
         // add transaction id to the map
         map.put("number",number);
         map.put("rechargeAmount",amount);
@@ -106,8 +108,8 @@ public class ProviderService {
         }
 
         Map<String,Object> map = new HashMap<>();
-        GlobalConstants.etisalatInternetPayment.setAmount(amount);
-        double cost = GlobalConstants.etisalatInternetPayment.getAmount();
+        GlobalConstants.internetPayment.getServiceList().get(0).setAmount(amount);
+        double cost = GlobalConstants.internetPayment.getServiceList().get(0).getAmount();
         // add transaction id to the map
         map.put("number",number);
         map.put("rechargeAmount",amount);
@@ -149,8 +151,8 @@ public class ProviderService {
             }
         }
         Map<String,Object> map = new HashMap<>();
-        GlobalConstants.schools.setAmount(amount);
-        double cost = GlobalConstants.schools.getAmount();
+        GlobalConstants.donation.getServiceList().get(0).setAmount(amount);
+        double cost = GlobalConstants.donation.getServiceList().get(0).getAmount();
         // add transaction id to the map
         map.put("destination",dest);
         map.put("rechargeAmount",amount);
@@ -187,8 +189,8 @@ public class ProviderService {
             }
         }
         Map<String,Object> map = new HashMap<>();
-        GlobalConstants.monthleyReceipt.setAmount(amount);
-        double cost = GlobalConstants.monthleyReceipt.getAmount();
+        GlobalConstants.landline.getServiceList().get(0).setAmount(amount);
+        double cost = GlobalConstants.landline.getServiceList().get(0).getAmount();
         // add transaction id to the map
         map.put("number",number);
         map.put("rechargeAmount",amount);
