@@ -1,22 +1,22 @@
 package com.example.fawryapi.util;
 
-import com.example.fawryapi.providers.donation_providers.CancerHospital;
-import com.example.fawryapi.providers.donation_providers.NGOs;
-import com.example.fawryapi.providers.donation_providers.Schools;
-import com.example.fawryapi.providers.internet_pay_providers.EtisalatInternetPayment;
-import com.example.fawryapi.providers.internet_pay_providers.OrangeInternetPayment;
-import com.example.fawryapi.providers.internet_pay_providers.VodafoneInternetPayment;
-import com.example.fawryapi.providers.internet_pay_providers.WeInternetPayment;
-import com.example.fawryapi.providers.landline_providers.MonthleyReceipt;
-import com.example.fawryapi.providers.landline_providers.QuarterReceipt;
-import com.example.fawryapi.providers.moblile_recahrge_providers.EtisalatRecharge;
-import com.example.fawryapi.providers.moblile_recahrge_providers.OrangeRecharge;
-import com.example.fawryapi.providers.moblile_recahrge_providers.VodafoneRecharge;
-import com.example.fawryapi.providers.moblile_recahrge_providers.WeRecharge;
-import com.example.fawryapi.services.donations.Donation;
-import com.example.fawryapi.services.internet_payment.InternetPayment;
-import com.example.fawryapi.services.landline.Landline;
-import com.example.fawryapi.services.mobile_recharge.MobileRecharge;
+import com.example.fawryapi.providers.model.donation_providers.CancerHospital;
+import com.example.fawryapi.providers.model.donation_providers.NGOs;
+import com.example.fawryapi.providers.model.donation_providers.Schools;
+import com.example.fawryapi.providers.model.internet_pay_providers.EtisalatInternetPayment;
+import com.example.fawryapi.providers.model.internet_pay_providers.OrangeInternetPayment;
+import com.example.fawryapi.providers.model.internet_pay_providers.VodafoneInternetPayment;
+import com.example.fawryapi.providers.model.internet_pay_providers.WeInternetPayment;
+import com.example.fawryapi.providers.model.landline_providers.MonthleyReceipt;
+import com.example.fawryapi.providers.model.landline_providers.QuarterReceipt;
+import com.example.fawryapi.providers.model.moblile_recahrge_providers.EtisalatRecharge;
+import com.example.fawryapi.providers.model.moblile_recahrge_providers.OrangeRecharge;
+import com.example.fawryapi.providers.model.moblile_recahrge_providers.VodafoneRecharge;
+import com.example.fawryapi.providers.model.moblile_recahrge_providers.WeRecharge;
+import com.example.fawryapi.services.model.donations.Donation;
+import com.example.fawryapi.services.model.internet_payment.InternetPayment;
+import com.example.fawryapi.services.model.landline.Landline;
+import com.example.fawryapi.services.model.mobile_recharge.MobileRecharge;
 
 public class GlobalConstants {
     // balance recharge providers

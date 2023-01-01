@@ -1,8 +1,8 @@
 package com.example.fawryapi.providers.service;
 
-import com.example.fawryapi.APIResponse;
-import com.example.fawryapi.transaction.Transaction;
-import com.example.fawryapi.transaction.TransactionRepository;
+import com.example.fawryapi.util.APIResponse;
+import com.example.fawryapi.transaction.model.Transaction;
+import com.example.fawryapi.transaction.repository.TransactionRepository;
 import com.example.fawryapi.util.GlobalConstants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -57,7 +57,7 @@ public class ProviderService {
         double cost = GlobalConstants.mobileRecharge.getServiceList().get(0).getAmount();
         System.out.println(GlobalConstants.etisalatRecharge.getDiscount());
         System.out.println(cost);
-        // add transaction id to the map
+        // add transaction id to the map what do you mean? again pls can't hear a word
         map.put("number",number);
         map.put("rechargeAmount",amount);
         map.put("cost",cost);
@@ -67,7 +67,8 @@ public class ProviderService {
         transaction.setServiceName("mobileRecharge");
         transaction.setProviderName(providerName);
         transaction.setStatus("");
-        transactionRepository.save(transaction);
+        transactionRepository.save(transaction);// yes after it is saved
+        map.put("transactionId",transaction.getTransactionID());
         return new APIResponse<>(true,"you are recharging XD",map.toString());
         // ---= pending
         // ---= complete
@@ -121,6 +122,7 @@ public class ProviderService {
         transaction.setProviderName(providerName);
         transaction.setStatus("");
         transactionRepository.save(transaction);
+        map.put("transactionId",transaction.getTransactionID());
         return new APIResponse<>(true,"you are recharging your internet XD",map.toString());
     }
 
@@ -164,6 +166,7 @@ public class ProviderService {
         transaction.setProviderName(providerName);
         transaction.setStatus("");
         transactionRepository.save(transaction);
+        map.put("transactionId",transaction.getTransactionID());
         return new APIResponse<>(true,"you are donating to "+dest+" <3 :) # ~-O",map.toString());
     ////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -202,6 +205,7 @@ public class ProviderService {
         transaction.setProviderName(providerName);
         transaction.setStatus("");
         transactionRepository.save(transaction);
+        map.put("transactionId",transaction.getTransactionID());
         return new APIResponse<>(true,"recharging landline",map.toString());
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -209,3 +213,11 @@ public class ProviderService {
 // payment
 // discount
 // refund :) we finish here
+
+// wait wait wait
+// 1. component diagram
+// 2. update sequence diagram
+// 3. update class diagram
+// 4. fill in the template! :) the cycle ends here! it is a famous phrase. who said it?
+// which ones ? ok send me my tasks why that? I don't understand how to do it.
+// ok man see you again. freedoooooooooooom كفارة يا ابو الصحاب

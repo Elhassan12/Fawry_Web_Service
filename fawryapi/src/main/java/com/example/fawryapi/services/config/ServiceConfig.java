@@ -1,12 +1,10 @@
 package com.example.fawryapi.services.config;
 
-import com.example.fawryapi.discount.controller.DiscountController;
-import com.example.fawryapi.discount.model.Discount;
 import com.example.fawryapi.discount.model.DiscountObserver;
-import com.example.fawryapi.services.donations.Donation;
-import com.example.fawryapi.services.internet_payment.InternetPayment;
-import com.example.fawryapi.services.landline.Landline;
-import com.example.fawryapi.services.mobile_recharge.MobileRecharge;
+import com.example.fawryapi.services.model.donations.Donation;
+import com.example.fawryapi.services.model.internet_payment.InternetPayment;
+import com.example.fawryapi.services.model.landline.Landline;
+import com.example.fawryapi.services.model.mobile_recharge.MobileRecharge;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

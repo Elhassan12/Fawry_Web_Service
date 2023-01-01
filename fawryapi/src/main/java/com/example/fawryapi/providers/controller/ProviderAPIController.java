@@ -1,6 +1,6 @@
 package com.example.fawryapi.providers.controller;
 
-import com.example.fawryapi.APIResponse;
+import com.example.fawryapi.util.APIResponse;
 import com.example.fawryapi.providers.service.ProviderService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import org.springframework.beans.factory.annotation.Autowired;

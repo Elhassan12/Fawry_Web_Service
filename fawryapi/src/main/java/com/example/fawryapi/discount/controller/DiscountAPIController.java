@@ -1,12 +1,9 @@
 package com.example.fawryapi.discount.controller;
 
-import com.example.fawryapi.APIResponse;
+import com.example.fawryapi.util.APIResponse;
 import com.example.fawryapi.discount.service.DiscountService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(path = "api/v1/discount")
@@ -32,5 +29,10 @@ public class DiscountAPIController {
             @RequestParam("serviceName") String serviceName
     ){
         return discountService.applySpecificDiscount(discount,serviceName);
+    }
+
+    @GetMapping
+    APIResponse<Object> getAllDiscounts(){
+        return discountService.getAllDiscounts();
     }
 }

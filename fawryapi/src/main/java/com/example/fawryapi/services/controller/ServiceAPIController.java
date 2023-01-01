@@ -1,6 +1,6 @@
 package com.example.fawryapi.services.controller;
 
-import com.example.fawryapi.APIResponse;
+import com.example.fawryapi.util.APIResponse;
 import com.example.fawryapi.services.service.ServiceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

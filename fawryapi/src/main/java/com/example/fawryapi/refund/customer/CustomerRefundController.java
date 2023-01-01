@@ -1,11 +1,11 @@
 package com.example.fawryapi.refund.customer;
 
-import com.example.fawryapi.APIResponse;
+import com.example.fawryapi.util.APIResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping(path = "customerrefund")
+@RequestMapping(path = "api/v1/customerrefund")
 public class CustomerRefundController {
     private final CustomerRefundService customerRefundService;
 

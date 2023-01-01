@@ -1,6 +1,6 @@
 package com.example.fawryapi.services.repo;
 
-import com.example.fawryapi.services.Service;
+import com.example.fawryapi.services.model.Service;
 
 import java.util.ArrayList;
 

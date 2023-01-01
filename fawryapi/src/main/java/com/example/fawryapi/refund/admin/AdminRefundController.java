@@ -1,6 +1,6 @@
 package com.example.fawryapi.refund.admin;
 
-import com.example.fawryapi.APIResponse;
+import com.example.fawryapi.util.APIResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

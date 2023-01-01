@@ -1,7 +1,7 @@
 package com.example.fawryapi;
 
-import com.example.fawryapi.customer.Customer;
-import com.example.fawryapi.customer.CustomerRepository;
+import com.example.fawryapi.customer.model.Customer;
+import com.example.fawryapi.customer.repository.CustomerRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

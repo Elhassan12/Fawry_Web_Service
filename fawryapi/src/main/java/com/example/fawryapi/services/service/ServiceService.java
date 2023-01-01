@@ -1,6 +1,6 @@
 package com.example.fawryapi.services.service;
 
-import com.example.fawryapi.APIResponse;
+import com.example.fawryapi.util.APIResponse;
 import com.example.fawryapi.providers.controller.ProviderController;
 import com.example.fawryapi.providers.model.Provider;
 import com.example.fawryapi.util.GlobalConstants;

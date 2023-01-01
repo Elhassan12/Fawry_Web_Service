@@ -1,7 +1,5 @@
 package com.example.fawryapi.discount.model;
-import com.example.fawryapi.discount.model.Discount;
-import com.example.fawryapi.discount.model.Observer;
-import com.example.fawryapi.services.Service;
+import com.example.fawryapi.services.model.Service;
 import com.example.fawryapi.services.repo.ServiceRepo;
 
 import java.util.ArrayList;

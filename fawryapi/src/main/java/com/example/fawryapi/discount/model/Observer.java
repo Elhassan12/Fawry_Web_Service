@@ -1,8 +1,7 @@
 package com.example.fawryapi.discount.model;
 
 
-import com.example.fawryapi.discount.model.Discount;
-import com.example.fawryapi.services.Service;
+import com.example.fawryapi.services.model.Service;
 
 public interface Observer {
 	void subscribe(Service service);

@@ -1,8 +1,8 @@
 package com.example.fawryapi.refund.customer;
 
-import com.example.fawryapi.APIResponse;
-import com.example.fawryapi.transaction.Transaction;
-import com.example.fawryapi.transaction.TransactionRepository;
+import com.example.fawryapi.util.APIResponse;
+import com.example.fawryapi.transaction.model.Transaction;
+import com.example.fawryapi.transaction.repository.TransactionRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
